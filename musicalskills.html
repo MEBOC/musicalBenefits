@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Instrument, Music" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 
+   Page describing skills needed and skills learned/honed from musicianship
+   Author: Micah Bakkum
+   Date:   05/21/2019
+   -->
+	<title>Skills acquired and honed through musicianship</title>
+	
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+	<link href="layout.css" type="text/css" rel="stylesheet" />
+	<link href="media.css" type="text/css" rel="stylesheet" media="screen" />
+	
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="musicalinstruments.html">Instruments</a></li>
+				<li><a href="musicalskills.html">Skills</a></li>
+				<li><a href="musicalbenefits.html">Benefits</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+		<section id="skills">
+			<h1 class="skill">Dexterity</h1>
+			<blockquote>Dexterity is important<br>
+			Dexterity is very important<br>
+			Dexterity is probably the most important as it most closely relates to proficiency
+			</blockquote>
+		</section>
+		<aside>	
+			<h1 class="skill">Memory</h1>
+			<blockquote>Memory is important</blockquote>
+		
+			<h1 class="skill">Teamwork</h1>
+			<blockquote>Teamwork makes the dream work</blockquote>
+		
+			<h1 class="skill">Proficiency</h1>
+			<blockquote>Proficiency is important</blockquote>
+		
+			<h1 class="skill">Dedication</h1>
+			<blockquote>Dedication is important</blockquote>
+		</aside>
+
+		<div>
+		<h1> Skill Choice Helper </h1>
+		<p> Enter the information that most suits you and our one of a kind matching system will suggest the correct instrument for you to try<p>
+		    <form action="http://example.com/cg/register" method="post">
+				<fieldset>
+				<!--M7LO5 Demonstrate the use of a text box in a form 
+				Here denoting the input field as a type of text creates a text box entry area where anything can be entered for the amount of time anyone wants to spend learning an instrument-->
+				<label for="Time">Time investment</label>
+				<input name="Time investment" id="yourtime" type="text" />
+				<label for="">Cash Money</label>
+				<input name="How much you wanna spend" id="CashMoney" type="text" />
+				<label for="">Location</label>
+				<input name="Favorite Country" id="Country" type="text" />
+				<label for="">Skills you value</label>
+				<input name="yourskills" id="skills" type="text" />
+				<label for="">Performance Style</label>
+				<input name="performingstyle" id="perfstyle" type="text" />
+				<label for="Personality Type">Personality Type</label>
+				<!-- M7LO8 Demonstrate the use of a selection list in a form 
+				Here is a list denoted by the select option instead of an input where the datalist below houses all the options to select from.  Setting the size to 1 makes it so only 1 selection option is visible at a time-->
+				<select name="persBox" id="Personality Type" size="1" />
+					<datalist id="personalitylist">
+					<option value="Belonging">Belonging</option>
+					<option value="Winning">Winning</option>
+					<option value="Attracting Attention">Attracting Attention</option>
+					<option value="Daring">Daring</option>
+					</select>			
+				</fieldset>
+				<!--M7LO10 Demonstrate the use of a submit button in a form 
+				Here by setting an input type as submit an area is created where the form is submitted somewhere for a result.  The value text is what will be displayed on the area of the submit button-->
+			<div id="buttons">
+			<input type="submit" value="Find your calling" />
+			</div>
+			</form>				
+		</div>
+
+</body>
+
+</html>

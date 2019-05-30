@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* Stylesheet for my website
+   Author: Micah Bakkum
+   Date:   05/21/2019
+   */
+
+/* reset styles */
+ol { 
+	list-style: none;
+}
+
+/*main page styles */
+html { 
+	background-color: brown;
+	background: radial-gradient(circle closest-corner at 10% 15%, black 5%, brown 15%);
+}
+
+/* figure box style */
+figure img {
+	display: block;
+	height: 400px;
+	width: 100%;
+}
+
+figure figcaption {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+/*body styles */
+body {
+	color: rgb(31,91,211);
+	background-color: silver;
+	font-family: Verdana, Geneva, sans-serif;
+	display: table;
+}
+
+p {
+	Padding: 20px 5px 5px 10px;
+	color: black;
+	text-align: center;
+	font-size: 200%;
+}
+
+section {
+	color: white;
+}
+
+footer {
+	background-color: black;
+	border-radius: 80px 40px;
+	text-align: center;
+	color: white;
+}
+
+/* Heading styles */
+h1 {
+	color: blue;
+	background-color: rgb(255,255,255);
+}
+
+h1.skill { 
+	color: brown;
+}
+
+blockquote {
+	color: green;
+	background-color: rgb(255, 165, 0);
+}
+
+blockquote:first-of-type {
+	color: red;
+}
+
+blockquote:last-of-type {
+	color: white;
+}
+
+blockquote::first-letter {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 200%;
+}
+
+h2 {
+	color: white;
+	background-color: rgb(235,177,131);
+}
+
+/* Navigation styles */
+
+nav > ul > li {
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.5em;	
+	text-align: center;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: green;
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: white;
+	text-decoration: underline;
+}
+
+a[href] {
+	color: white;
+}
+
+/*Section styles */
+
+section#benefit1 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+section#benefit2 {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+section#benefit3 {
+	font-size: 0.8em;
+	text-align: center;
+
+}
+
+section#benefit4 {
+	font-size: 1.2em;
+	text-align: right;
+}
+
+section#benefit4 h1 p {
+	position: inherit;
+}
+
+section#benefit1 h1 {
+	position: fixed;
+}
+
+body header div {
+	position: relative;
+	top: 200px;
+	left: 100px;
+}
+
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML) 
+Here adding borders, background colors, font sizing, and spacing features cause the table to expand and fill up an appropriate amount of screen 
+as well as creating emphasis where I want it (on the headers) and presenting itself as a professional standalone feature with the borders added*/
+
+table {
+	line-height: 2em;
+	padding: 10px;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, th, td {
+	background-color: yellow;
+	border: 3px solid black;
+}
+
+table th {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+table thead tr th {
+	background-color: white;
+	color: brown
+}
+
+/* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) 
+This menu appears at the start of the musical instruments page and lists instruments by type classing and has hoverable links to where they are further
+described further down the page*/
+
+ul.submenu {
+	display: none;
+}
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}
+
+section div h1 {
+	color: white;
+	background-color: tan;
+}
+
+section#mainmenu {
+	background-color: brown;
+}
+
+ul.submenu {
+	background-color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+div#fam1 {
+	background: white;
+	color: brown;
+	height: 100px;
+	width: 100px;
+}
+
+/*M5LO6 Demonstrate use of properties of flexbox items 
+(CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+Here I've flexed the starting value for the string box to 300 pixels as I feel they're the best ones, having their box be enlarged emphasizes that*/
+
+div#fam2 {
+	background: black;
+	color: red;
+	height: 100px;
+	width: 100px;
+	flex-basis: 300px;
+}
+
+div#fam3 {
+	background: blue;
+	color: green;
+	height: 100px;
+	width: 100px;
+}
+
+div#fam4 {
+	background: tan;
+	color: white;
+	height: 100px;
+	width: 100px;
+}
+
+div#fam5 {
+	background: crimson;
+	color: gold;
+	height: 100px;
+	width: 100px;
+}
+
+/*M5LO5 Demonstrate the use of flexboxes on a web page 
+(CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+Here I've created an area where there is another display representing the instrument classes and flexed the display so they take up the whole section creating a richer
+layout*/
+
+/*M5LO7 Demonstrate use of properties of flexbox containers 
+(CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them) 
+Here I've used the justify content property to adjust the placement and spacing of the little boxes I created*/
+
+div#classifications {
+	display: -webkit-flex;
+	display :flex;
+	border: 2px solid black;
+	justify-content: space-between;
+}
+
+form {
+	background-color: tan;
+}
+	
+/* M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)*/
+
+label {
+	background-color: cyan;
+	border: 3px solid black;
+	clear: left;
+	color: black;
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 5px 5px 5px 5px;
+}
+
+form input, select, textarea {
+	float: left;
+	border: 3px solid brown;
+	width: 300px;
+	margin: 5px 5px 5px 5px;
+}
+
+/* media styles */
+
+/* M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page) */
+audio {
+	border: 3px solid black;
+
+}
+
+iframe {
+	width: 50%;
+}
+
+#audio {
+	float: left;
+}
+
+#video {
+	float: right;
+	width: 800px;
+}
+
+#media {
+	background-color: olive;
+}
+
+#media::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/*https://www.rapidtables.com/convert/color/rgb-to-hsl.html color translator being cited, not sure if that's the proper way or not, but I'm annotating it*/
