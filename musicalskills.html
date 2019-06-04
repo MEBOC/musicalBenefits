@@ -7,7 +7,7 @@
 <!-- 
    Page describing skills needed and skills learned/honed from musicianship
    Author: Micah Bakkum
-   Date:   05/21/2019
+   Date:   06/11/2019
    -->
 	<title>Skills acquired and honed through musicianship</title>
 	
@@ -28,26 +28,66 @@
 			</ul>
 		</nav>
 	</header>
+		<h1 class="skill">Important skills listed below!</h1>
 		<section id="skills">
-			<h1 class="skill">Dexterity</h1>
+			<h2 class="skill">Dexterity</h2>
 			<blockquote>Dexterity is important<br>
 			Dexterity is very important<br>
 			Dexterity is probably the most important as it most closely relates to proficiency
 			</blockquote>
 		</section>
 		<aside>	
-			<h1 class="skill">Memory</h1>
+			<h2 class="skill">Memory</h2>
 			<blockquote>Memory is important</blockquote>
 		
-			<h1 class="skill">Teamwork</h1>
+			<h2 class="skill">Teamwork</h2>
 			<blockquote>Teamwork makes the dream work</blockquote>
 		
-			<h1 class="skill">Proficiency</h1>
+			<h2 class="skill">Proficiency</h2>
 			<blockquote>Proficiency is important</blockquote>
 		
-			<h1 class="skill">Dedication</h1>
+			<h2 class="skill">Dedication</h2>
 			<blockquote>Dedication is important</blockquote>
 		</aside>
+
+		<div>
+		<h1> Skill Choice Helper </h1>
+		<p> Enter the information that most suits you and our one of a kind matching system will suggest the correct instrument for you to try<p>
+		    <form action="http://example.com/cg/register" method="post">
+				<fieldset>
+				<!--M7LO5 Demonstrate the use of a text box in a form 
+				Here denoting the input field as a type of text creates a text box entry area where anything can be entered for the amount of time anyone wants to spend learning an instrument-->
+				<label for="Time">Time investment</label>
+				<input name="Time investment" id="Time" type="text" />
+				<label for="CashMoney">Cash Money</label>
+				<input name="How much you wanna spend" id="CashMoney" type="text" />
+				<label for="Where">Location</label>
+				<input name="Favorite Country" id="Where" type="text" />
+				<label for="Traits">Skills you value</label>
+				<input name="yourtraits" id="Traits" type="text" />
+				<label for="Flair">Performance Style</label>
+				<input name="performingstyle" id="Flair" type="text" />
+				<label for="PersonalityType">Personality Type</label>
+				<!-- M7LO8 Demonstrate the use of a selection list in a form 
+				Here is a list denoted by the select option instead of an input where the datalist below houses all the options to select from.  Setting the size to 1 makes it so only 1 selection option is visible at a time-->
+				<select name="persBox" id="PersonalityType" size="1" >			
+					<option value="Belonging">Belonging</option>
+					<option value="Winning">Winning</option>
+					<option value="Attracting Attention">Attracting Attention</option>
+					<option value="Daring">Daring</option>
+				</select>
+				<fieldset>
+				<textarea rows="12" id="hpinfo" name="harrypotter" placeholder="Enter some information about which Hogwarts house you identify with and why you believe Slytherin house is superior."></textarea>	
+				</fieldset>
+				</fieldset>
+				<!--M7LO10 Demonstrate the use of a submit button in a form 
+				Here by setting an input type as submit an area is created where the form is submitted somewhere for a result (There will not be a functional form return program/script used at this time).  
+				The value text is what will be displayed on the area of the submit button-->
+			<div id="buttons">
+			<input type="submit" value="Find your calling" />
+			</div>
+			</form>				
+		</div>
 
 </body>
 

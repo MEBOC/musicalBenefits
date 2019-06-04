@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Stylesheet for my website
    Author: Micah Bakkum
-   Date:   05/21/2019
+   Date:   06/11/2019
    */
 
 /* reset styles */
@@ -12,7 +12,7 @@ ol {
 /*main page styles */
 html { 
 	background-color: brown;
-	background: radial-gradient(circle closest-corner at 10% 15%, black 5%, brown 15%);
+	background: radial-gradient(circle closest-corner at 10% 15%, yellow 5%, aqua 15%);
 }
 
 /* figure box style */
@@ -29,13 +29,17 @@ figure figcaption {
 }
 
 /*body styles */
+/* M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML; 
+note it has to include a time aspect, not be immediate)
+The transition here adds emphasis on the body as the central focus of the eyes wherein all the information will be found */
 body {
 	color: rgb(31,91,211);
 	background-color: silver;
 	font-family: Verdana, Geneva, sans-serif;
 	display: table;
+	transition: background-color 3s;
 }
-
+	
 p {
 	Padding: 20px 5px 5px 10px;
 	color: black;
@@ -56,7 +60,7 @@ footer {
 
 /* Heading styles */
 h1 {
-	color: blue;
+	color: sienna;
 	background-color: rgb(255,255,255);
 }
 
@@ -84,7 +88,7 @@ blockquote::first-letter {
 
 h2 {
 	color: white;
-	background-color: rgb(235,177,131);
+	background-color: sienna;
 }
 
 /* Navigation styles */
@@ -147,9 +151,7 @@ body header div {
 	left: 100px;
 }
 
-/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML) 
-Here adding borders, background colors, font sizing, and spacing features cause the table to expand and fill up an appropriate amount of screen 
-as well as creating emphasis where I want it (on the headers) and presenting itself as a professional standalone feature with the borders added*/
+/* table styles */ 
 
 table {
 	line-height: 2em;
@@ -160,7 +162,7 @@ table {
 }
 
 table, th, td {
-	background-color: yellow;
+	background-color: gold;
 	border: 3px solid black;
 }
 
@@ -174,9 +176,11 @@ table thead tr th {
 	color: brown
 }
 
-/* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves) 
-This menu appears at the start of the musical instruments page and lists instruments by type classing and has hoverable links to where they are further
-described further down the page*/
+/* hover / mobile styles */
+
+a#navicon {
+	display: none;
+}
 
 ul.submenu {
 	display: none;
@@ -188,7 +192,7 @@ a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
 
 section div h1 {
 	color: white;
-	background-color: tan;
+	background-color: sienna;
 }
 
 section#mainmenu {
@@ -206,57 +210,104 @@ ul {
 div#fam1 {
 	background: white;
 	color: brown;
-	height: 100px;
-	width: 100px;
+	height: 10%;
+	width: 10%;
 }
-
-/*M5LO6 Demonstrate use of properties of flexbox items 
-(CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
-Here I've flexed the starting value for the string box to 300 pixels as I feel they're the best ones, having their box be enlarged emphasizes that*/
 
 div#fam2 {
 	background: black;
 	color: red;
-	height: 100px;
-	width: 100px;
+	height: 30%;
+	width: 30%;
 	flex-basis: 300px;
 }
 
 div#fam3 {
 	background: blue;
 	color: green;
-	height: 100px;
-	width: 100px;
+	height: 10%;
+	width: 10%;
 }
 
 div#fam4 {
 	background: tan;
 	color: white;
-	height: 100px;
-	width: 100px;
+	height: 10%;
+	width: 10%;
 }
 
 div#fam5 {
 	background: crimson;
 	color: gold;
-	height: 100px;
-	width: 100px;
+	height: 10%;
+	width: 10%;
 }
-
-/*M5LO5 Demonstrate the use of flexboxes on a web page 
-(CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
-Here I've created an area where there is another display representing the instrument classes and flexed the display so they take up the whole section creating a richer
-layout*/
-
-/*M5LO7 Demonstrate use of properties of flexbox containers 
-(CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them) 
-Here I've used the justify content property to adjust the placement and spacing of the little boxes I created*/
 
 div#classifications {
 	display: -webkit-flex;
 	display :flex;
 	border: 2px solid black;
 	justify-content: space-between;
+}
+
+form {
+	background-color: tan;
+}
+	
+/* M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)
+Using these formating features is what actually creates the blocks, outlines and spaces for the form to actually look like an area where inputs are made,
+the coloring of the different areas (border, background) help accentuate different areas of importanse on the form, and having the inputs floated left leaves the door
+open for a possible result function to appear on the right end of the element later on, or it could be filled with an image for example.*/
+
+label {
+	background-color: cyan;
+	border: 3px solid black;
+	clear: left;
+	color: black;
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 5px 5px 5px 5px;
+}
+
+form input, select, textarea {
+	float: left;
+	border: 3px solid brown;
+	width: 300px;
+	margin: 5px 5px 5px 5px;
+}
+
+/* media styles */
+
+/* M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page) 
+Here I've placed accented the different areas of audio clips by adding borders and made layout decisions which let them be placed closer to each other on screen.  Grouping them
+in an efficient way presents them cleaner and makes it easier for a visitor to find what embedded media areas are and make a decision if they want to listen/watch anything.
+Having a separate background color helps visually set this section of the page apart so that a visitor knows this is a media sample section of the page.*/
+audio {
+	border: 3px solid black;
+}
+
+iframe {
+	width: 50%;
+}
+
+#audio {
+	float: left;
+}
+
+#video {
+	float: right;
+	width: 800px;
+}
+
+#media {
+	background: linear-gradient(white,green,yellow);
+}
+
+#media::after {
+	clear: both;
+	content: "";
+	display: table;
 }
 
 /*https://www.rapidtables.com/convert/color/rgb-to-hsl.html color translator being cited, not sure if that's the proper way or not, but I'm annotating it*/
